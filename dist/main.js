@@ -1,13 +1,4 @@
 
-
-
-
-
-
-// Close Button
-
-
-
  
 document, addEventListener('DOMContentLoaded', function () {
     
