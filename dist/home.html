@@ -9,38 +9,39 @@
     <link rel="icon" type="image/x-icon" href="/icons/fav-icon.svg">
     <link rel="stylesheet" href="style.css">
 
-<body class=" bg-[#251392] font-mono dark:bg-slate-800">
+<body class=" bg-[#251392] font-mono dark:bg-slate-800 m-0 p-0 max-w-full">
     <!-- Header Section-->
-    <section class="flex">
-        <header class="flex m-auto mt-12 w-[1233px] font-sans static ">
-            <svg class="w-16 h-16 p-2 text-neutral-900 hover:text-neutral-600" viewBox="0 0 59 55">
+    <section aria-label="Navigation menu" class="flex w-full ">
+        <header class="flex m-auto mt-12 w-[1233px] static">
+            <svg class="w-20 h-20 p-2 text-neutral-900 hover:text-neutral-600" viewBox="0 0 59 55">
                 <path
                     d="M21.8934 12.0004L13 24.0003L21.8934 36L23.9969 32.1644L18.0042 24.0003L23.9969 15.8361L21.8934 12.0004Z"
                     fill="#00F963" />
                 <path d="M40.1062 12L38.0032 15.8359L43.9956 24.0001L38.0032 32.1641L40.1062 36L49 24.0001L40.1062 12Z"
                     fill="#00F963" />
             </svg>
-            <div class="flex-grow "></div>
-            <nav-bar class="flex">
-                <menu-items id="menubar" class=" hidden mr-14 sm:block lg:flex  md:flex gap-10">
+            <div class="flex-grow"></div>
+            <nav-bar class="flex ">
+                <menu-items id="menubar"
+                    class="hidden xs:justify-center sm:flex mt-3 md:flex md:gap-10 lg:flex lg:gap-10 xl:flex xl:gap-10 2xl:flex 2xl:gap-10">
                     <a aria-label="Home" href="Home">
                         <h1
-                            class="flex text-white font-mono text-[20px]  sm:block mb-9 cursor-pointer p-2  hover:text-green-400 rounded-xl focus:outline-none ">
+                            class="flex text-white font-mono text-[30px]  sm:block sm:text-[20px] xs:text-[20px]  mb-9 cursor-pointer p-2  hover:text-[#00F963] rounded-xl focus:outline-none transition ease-in-out delay-15 hover:-translate-y-1 hover:scale-110">
                             Home</h1>
                     </a>
                     <a aria-label="Projects" href="Projects">
                         <h1
-                            class="flex text-white font-mono text-[20px] sm:block  mb-9 cursor-pointer p-2  hover:text-green-400 rounded-lg ">
+                            class="flex text-white font-mono text-[30px] sm:block sm:text-[20px] xs:text-[20px] mb-9 cursor-pointer p-2  hover:text-[#00F963] rounded-lg transition ease-in-out delay-15 hover:-translate-y-1 hover:scale-110">
                             Projects</h1>
                     </a>
                     <a aria-label="Contact" href="Contact">
                         <h1
-                            class="flex text-white font-mono text-[20px] sm:block  mb-9 cursor-pointer bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 rounded-xl p-2 hover:bg-green-900 border-solid ">
+                            class="flex text-white font-mono text-[30px] sm:block sm:text-[20px] xs:text-[20px] mb-9 cursor-pointer bg-gradient-to-r from-blue-600 to-[#00F963] hover:from-green-500 hover:to-[#00F963] rounded-full p-2 transition ease-in-out delay-15 hover:-translate-y-1 hover:scale-110 ">
                             Contact</h1>
                     </a>
                 </menu-items>
                 <button aria-label="menu" type="button" id="menu"
-                    class="  fixed right-0 lg:hidden md:hidden cursor-pointer mt-2">
+                    class="fixed block right-0 sm:hidden md:hidden lg:hidden xl:hidden 2xl:hidden cursor-pointer mt-2">
                     <svg class="w-11 h-11 " viewBox="0 0 53 53" fill="none">
                         <g clip-path="url(#clip0_81_84)">
                             <path
@@ -55,10 +56,48 @@
                         </g>
                     </svg>
                 </button>
-
             </nav-bar>
         </header>
     </section>
+    <!-- Main -->
+    <main class="flex xs:flex-col xs:align-middle xs:w-full sm:flex m-auto mt-12 max-w-[1233px] justify-evenly ">
+        <section aria-label="Section with download CV button and links to connect to Github and Linkedin"
+            class="text-xl grid">
+            <div class="flex max-w-[320px] ">
+                <img class="w-20 static h-8 sm:bg-blue-700 sm:w-40 xs:bg-green-700 xs:w-40 xs:h-8 xs:ml-5"
+                    src="../icons/hello.svg" alt="Hello">
+                <h2 class="text-[20px] text-white max-w-3/2">HI, I'm <strong
+                        class="text-[#D4B08C] sm:w-1">SILVIU</strong>, welcome to my
+                    website.</h2>
+            </div>
+            <div class="flex-col max-w-[400px] mt-8">
+                <img class="w-28" src="../icons/avatar.svg" alt="avatar">
+                <p class="text-white text-[17px] grid ml-3 indent-8">I'm a dedicated web developer,
+                    driven by a relentess
+                    pursuit of knowledge in the ever-evolving of web
+                    technologies.
+                </p>
+                <a aria-label="CV" href="file_path" download="file_name"
+                    class=" text-white text-lg w-44 flex bg-[#00F963] mt-6 p-2 rounded-3xl bg-gradient-to-r from-blue-400 to-[#00F963] hover:from-green-500 hover:to-[#00F963] transition ease-in-out delay-15  hover:-translate-y-1 hover:scale-110 hover:bg-teal-300 duration-300 border-solid border-2 border-green-900"><img
+                        class="w-7 mr-1" src="../icons/download_icon.svg" alt="download">Download CV</a>
+            </div>
+        </section>
+        <aside class="flex max-w-[100px] xs:mt-8 ">
+            <div class="flex-col ">
+                <h3 class="text-white text-[25px]">Connect</h3>
+                <a aria-label="github" href="https://github.com/dashboard"
+                    class="text-white text-lg bg-[#00F963] mt-6 p-2 rounded-3xl  w-32 flex bg-gradient-to-r from-blue-400 to-[#00F963] hover:from-green-500 hover:to-[#00F963] transition ease-in-out delay-15  hover:-translate-y-1 hover:scale-110 hover:bg-teal-300 duration-300 border-solid border-2 border-green-900">Github
+
+                    <img src="/icons/github_icon.svg" alt="github">
+                </a>
+                <a aria-label="linkedin" href="https://www.linkedin.com/in/silviu-miron-1b185012a/"
+                    class="text-white text-lg w-32 flex bg-[#00F963] mt-6 p-2 rounded-3xl bg-gradient-to-r  from-blue-400 to-[#00F963] hover:from-green-500 hover:to-[#00F963] transition ease-in-out delay-15  hover:-translate-y-1 hover:scale-110 hover:bg-teal-300 duration-300 border-solid border-2 border-green-900">Linkedin
+
+                    <img class="ml-1" src="/icons/linkedin.svg" alt="linkedin">
+                </a>
+            </div>
+        </aside>
+    </main>
     <script src="main.js"></script>
 </body>
 </html>
