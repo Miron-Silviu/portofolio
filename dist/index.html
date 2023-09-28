@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="theme-color" content="#251392">
+    <meta name="description" content="In this website are included personal projects">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silviu Miron | Web Dev </title>
+    <link rel="icon" type="image/x-icon" href="./icons/fav-icon.svg">
+    <link rel="stylesheet" href="style.css">
+
+<body class=" bg-violet-950 font-mono dark:bg-slate-800 m-0 p-0 w-full box-border flex-col">
+    <!-- Header Section-->
+    <section aria-label="Navigation menu" class="flex mx-auto w-full xs:ml-10 xs:mx-auto sm:mx-auto justify-between">
+        <header class="flex  mx-auto mt-12 xs:w-full xs:mx-auto w-full max-w-[1279px] justify-between xs:flex-col xl:mx-11">
+            <div class="flex">
+                <svg class="w-20 xs:w-10 xs:m-auto sm:w-12 md:w-16  transition ease-in-out delay-15 "
+                    viewBox="0 0 59 55">
+                    <path
+                        d="M21.8934 12.0004L13 24.0003L21.8934 36L23.9969 32.1644L18.0042 24.0003L23.9969 15.8361L21.8934 12.0004Z"
+                        fill="#00F963" />
+                    <path
+                        d="M40.1062 12L38.0032 15.8359L43.9956 24.0001L38.0032 32.1641L40.1062 36L49 24.0001L40.1062 12Z"
+                        fill="#00F963" />
+                </svg>
+            </div>
+            <nav-bar class=" flex flex-col-reverse w-auto xs:m-auto">
+                <menu-items id="menubar"
+                    class=" xs:justify-center hidden sm:justify-center mt-3 md:flex md:gap-5 lg:flex lg:gap-5 xl:flex xl:gap-5 2xl:flex 2xl:gap-5">
+                    <ul class="flex sm:flex-col xs:flex-col gap-5">
+                        <li>
+                            <a aria-label="Home" href="Home">
+                                <h1
+                                    class="flex text-white font-mono text-[30px]  sm:block sm:text-[18px] xs:text-[16px] xs:m-auto xs:ml-4 mb-9 cursor-pointer p-2  hover:text-[#00F963] rounded-xl focus:outline-none transition ease-in-out delay-15 hover:-translate-y-1 hover:scale-110">
+                                    Home</h1>
+                            </a>
+                        </li>
+                        <li>
+                            <a aria-label="Projects" href="Projects">
+                                <h1
+                                    class="flex text-white font-mono text-[30px] sm:block sm:text-[18px] xs:text-[16px] xs:m-auto mb-9 cursor-pointer p-2  hover:text-[#00F963] rounded-lg transition ease-in-out delay-15 hover:-translate-y-1 hover:scale-110">
+                                    Projects</h1>
+                            </a>
+                        </li>
+                        <li>
+                            <a aria-label="Contact" href="Contact">
+                                <h1
+                                    class="flex text-white font-mono text-[30px] xs:w-20 sm:w-24 sm:block sm:text-[18px] xs:text-[16px] xs:m-auto mb-9 cursor-pointer bg-gradient-to-r from-blue-600 to-[#00F963] hover:from-green-500 hover:to-[#00F963] rounded-full p-2 transition ease-in-out delay-15 hover:-translate-y-1 hover:scale-110 ">
+                                    Contact</h1>
+                            </a>
+                        </li>
+                    </ul>
+                </menu-items>
+                <button aria-label="menu" type="button" id="menu"
+                    class="static right-0 hidden xs:block xs:m-auto sm:block cursor-pointer">
+                    <svg class="w-11 h-11 " viewBox="0 0 53 53" fill="none">
+                        <g clip-path="url(#clip0_81_84)">
+                            <path
+                                d="M46.375 16.5625H6.625C6.18574 16.5625 5.76446 16.388 5.45385 16.0774C5.14325 15.7668 4.96875 15.3455 4.96875 14.9062C4.96875 14.467 5.14325 14.0457 5.45385 13.7351C5.76446 13.4245 6.18574 13.25 6.625 13.25H46.375C46.8143 13.25 47.2355 13.4245 47.5461 13.7351C47.8568 14.0457 48.0312 14.467 48.0312 14.9062C48.0312 15.3455 47.8568 15.7668 47.5461 16.0774C47.2355 16.388 46.8143 16.5625 46.375 16.5625Z"
+                                fill="#00F963" />
+                            <path
+                                d="M46.375 28.1562H6.625C6.18574 28.1562 5.76446 27.9818 5.45385 27.6711C5.14325 27.3605 4.96875 26.9393 4.96875 26.5C4.96875 26.0607 5.14325 25.6395 5.45385 25.3289C5.76446 25.0182 6.18574 24.8438 6.625 24.8438H46.375C46.8143 24.8438 47.2355 25.0182 47.5461 25.3289C47.8568 25.6395 48.0312 26.0607 48.0312 26.5C48.0312 26.9393 47.8568 27.3605 47.5461 27.6711C47.2355 27.9818 46.8143 28.1562 46.375 28.1562Z"
+                                fill="#00F963" />
+                            <path
+                                d="M46.375 39.75H6.625C6.18574 39.75 5.76446 39.5755 5.45385 39.2649C5.14325 38.9543 4.96875 38.533 4.96875 38.0938C4.96875 37.6545 5.14325 37.2332 5.45385 36.9226C5.76446 36.612 6.18574 36.4375 6.625 36.4375H46.375C46.8143 36.4375 47.2355 36.612 47.5461 36.9226C47.8568 37.2332 48.0312 37.6545 48.0312 38.0938C48.0312 38.533 47.8568 38.9543 47.5461 39.2649C47.2355 39.5755 46.8143 39.75 46.375 39.75Z"
+                                fill="#00F963" />
+                        </g>
+                    </svg>
+                </button>
+            </nav-bar>
+        </header>
+    </section>
+   <hr class=" flex mx-auto border-4 border-[#00F963] xs:w-[250px]">
+    <!-- Main -->
+    <main class="flex sm:flex-col xs:flex-wrap xs:justify-center sm:flex m-auto mt-10 max-w-[12790px] justify-evenly ">
+        <section aria-label="Section with download CV button and links to connect to Github and Linkedin"
+            class="flex-col xs:mx-auto sm:mx-auto xs:ml-14">
+            <div class="flex sm:felx xs:ml-5 xs:w-full xs:flex-col xs:mx-auto ">
+                <img class="w-5 h-8 mr-2 xs:mx-auto " src="./icons/hello.svg" alt="Hello">
+                <h2
+                    class="text-[20px]  text-white xs:text-[16px] sm:text[18px] xs:mx-auto  ">
+                    HI, I'm <strong class="text-[#D4B08C]">SILVIU</strong>,
+                    welcome to my
+                    website.</h2>
+            </div>
+            <div class="flex-col max-w-[400px] xs:w-full mt-12 xs:justify-center  ">
+                <img class="w-28 flex xs:w-20 xs:mx-auto sm:mx-auto mx-a" src="./icons/avatar.svg" alt="avatar">
+                <p
+                    class="text-white text-[20px] text-center flex-col mt-4 xs:full xs:flex-wrap  xs:text-[16px] xs:mx-7 sm:text-[18px] ">
+                    I'm a dedicated web developer,
+                    driven by a relentess
+                    pursuit of knowledge in the ever-evolving of web
+                    technologies.
+                </p>
+
+            </div>
+        </section>
+        <aside class="flex xs:mt-16 xs:ml-14 xs:justify-center sm:justify-center md:mt-12 sm:mt-12">
+            <div class="flex-col xs:flex-wrap sm:justify-center">
+                <h3 class="text-white text-[25px] text-center">Connect</h3>
+                <a aria-label="github" href="https://github.com/dashboard"
+                    class="text-white xs:w-24 xs:flex-wrap text-lg bg-[#00F963] mt-6 p-2 rounded-3xl  w-32 flex bg-gradient-to-r from-blue-400 to-[#00F963] hover:from-green-500 hover:to-[#00F963] transition ease-in-out delay-15  hover:-translate-y-1 hover:scale-110 hover:bg-teal-300 duration-300 border-solid border-2 border-green-900">Github
+
+                    <img class="flex xs:w-auto xs:flex-wrap sml-1" src="./icons/github_icon.svg" alt="github">
+                </a>
+                <a aria-label="linkedin" href="https://www.linkedin.com/in/silviu-miron-1b185012a/"
+                    class="text-white text-lg xs:w-24 xs:flex-wrap flex bg-[#00F963] mt-6 p-2 rounded-3xl bg-gradient-to-r  from-blue-400 to-[#00F963] hover:from-green-500 hover:to-[#00F963] transition ease-in-out delay-15  hover:-translate-y-1 hover:scale-110 hover:bg-teal-300 duration-300 border-solid border-2 border-green-900">Linkedin
+
+                    <img class=" flex xs:flex-wrap ml-1" src="./icons/linkedin.svg" alt="linkedin">
+                </a>
+                <a aria-label="CV" href="file_path" download="file_name"
+                    class=" text-white  text-lg w-32 flex xs:w-24 xs:flex-wrap  bg-[#00F963] mt-6 p-2 rounded-3xl bg-gradient-to-r from-blue-400 to-[#00F963] hover:from-green-500 hover:to-[#00F963] transition ease-in-out delay-15  hover:-translate-y-1 hover:scale-110 hover:bg-teal-300 duration-300 border-solid border-2 border-green-900"><img
+                        class="w-7 flex xs:flex-wrap mr-3 " src="./icons/download_icon.svg" alt="download">CV</a>
+            </div>
+        </aside>
+    </main>
+    <!-- footer section -->
+    <footer>
+        <section
+            class=" flex-col max-w-[1270px] xs:w-full xs:ml-8 text-center m-auto mt-28 xs:mt-16 sm:mt-16">
+            <div class="flex max-w-[400px] m-auto xs:flex-wrap">
+                <h3 class=" text-white m-auto text-[25px] xs:text-[16px] xs:text-center ">Technologies Used </h3>
+            </div>
+            <div
+                class="flex flex-wrap rounded-3xl h-40 xs:h-auto xs:justify-center  sm:justify-center sm:h-auto md:h-auto lg:h-auto gap-5 mx-auto mt-5 max-w-[1200px] bg-gray-500">
+                <img class="w-20 h-24 self-center transition ease-in-out delay-15  hover:-translate-y-1 hover:scale-110 duration-300"
+                    src="./icons/figma.svg" alt="figma">
+                <img class="w-20 h-24 self-center transition ease-in-out delay-15  hover:-translate-y-1 hover:scale-110 duration-300"
+                    src="./icons/html-5.svg" alt="html">
+                <img class="w-20 h-24 self-center transition ease-in-out delay-15  hover:-translate-y-1 hover:scale-110 duration-300"
+                    src="./icons/bootstrap.svg" alt="bootstrap">
+                <img class="w-20 h-24 self-center transition ease-in-out delay-15  hover:-translate-y-1 hover:scale-110 duration-300"
+                    src="./icons/css-3.svg" alt="css">
+                <img class="w-20 h-24 self-center transition ease-in-out delay-15  hover:-translate-y-1 hover:scale-110 duration-300"
+                    src="./icons/sass_icon.svg" alt="sass">
+                <img class="w-20 h-24 self-center transition ease-in-out delay-15  hover:-translate-y-1 hover:scale-110 duration-300"
+                    src="./icons/tailwind.svg" alt="tailwind">
+                <img class="w-20 h-24 self-center transition ease-in-out delay-15  hover:-translate-y-1 hover:scale-110 duration-300"
+                    src="./icons/git.svg" alt="git">
+                <img class="w-20 h-24 self-center transition ease-in-out delay-15  hover:-translate-y-1 hover:scale-110 duration-300"
+                    src="./icons/github.svg" alt="git">
+                <img class="w-20 h-24 self-center transition ease-in-out delay-15  hover:-translate-y-1 hover:scale-110 duration-300"
+                    src="./icons/java-script.svg" alt="java script">
+                <img class="w-20 h-24 self-center transition ease-in-out delay-15  hover:-translate-y-1 hover:scale-110 duration-300"
+                    src="./icons/angular.svg" alt="angular">
+                <img class="w-20 h-24 self-center transition ease-in-out delay-15  hover:-translate-y-1 hover:scale-110 duration-300 "
+                    src="./icons/react.svg" alt="reaxt">
+            </div>
+        </section>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
