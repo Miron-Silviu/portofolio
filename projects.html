@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="theme-color" content="#251392">
+    <meta name="description" content="In this website are included personal projects">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silviu Miron | Web Dev </title>
+    <link rel="icon" type="image/x-icon" href="./icons/avatar.svg">
+    <link rel="stylesheet" href="style.css">
+
+<body class="bg-blue-950 dark:bg-slate-800 m-0 p-0 w-full box-border flex-col">
+    <!-- Header Section-->
+    <section aria-label="Navigation menu" class="flex mx-auto w-full xs:ml-10 xs:mx-auto sm:mx-auto justify-betweem">
+        <header
+            class="flex mx-auto mt-12 xs:w-full xs:mx-auto w-full max-w-[1279px] justify-between xs:flex-col xl:mx-11">
+            <div>
+                <img class="w-20 xs:w-10 xs:m-auto xs:justify-center sm:w-12 md:w-16" src="./icons/logo.svg" alt="logo">
+            </div>
+            <nav-bar class=" flex xs:flex-col-reverse  w-auto xs:m-auto ">
+                <menu-items id="menubar"
+                    class=" xs:justify-center  xs:m-auto hidden sm:justify-center mt-3 md:flex md:gap-5 lg:flex lg:gap-5 xl:flex xl:gap-5 2xl:flex 2xl:gap-5 ">
+                    <ul class="flex sm:flex-col xs:flex-col gap-5 xs:mx-auto">
+                        <li>
+                            <a aria-label="Home" href="index.html">
+                                <h1
+                                    class="flex text-white font-mono text-[30px]  sm:block sm:text-[18px] xs:text-[16px] xs:m-auto xs:ml-4 mb-9 cursor-pointer p-2  hover:text-[#00F963] rounded-xl focus:outline-none transition ease-in-out delay-15 hover:-translate-y-1 hover:scale-110">
+                                    Home</h1>
+                            </a>
+                        </li>
+                        <li>
+                            <a aria-label="Projects" href="projects.html">
+                                <h1
+                                    class="flex text-white font-mono text-[30px] sm:block sm:text-[18px] xs:text-[16px] xs:m-auto mb-9 cursor-pointer p-2  hover:text-[#00F963] rounded-lg transition ease-in-out delay-15 hover:-translate-y-1 hover:scale-110">
+                                    Projects</h1>
+                            </a>
+                        </li>
+                        <li>
+                            <a aria-label="Contact" href="contact.html">
+                                <h1
+                                    class="flex text-white font-mono text-[30px] xs:w-20 sm:w-24 sm:block sm:text-[18px] xs:text-[16px] xs:m-auto mb-9 cursor-pointer bg-gradient-to-r from-blue-600 to-[#00F963] hover:from-green-500 hover:to-[#00F963] rounded-full p-2 transition ease-in-out delay-15 hover:-translate-y-1 hover:scale-110 ">
+                                    Contact</h1>
+                            </a>
+                        </li>
+                    </ul>
+                </menu-items>
+                <div>
+                    <button aria-label="menu" type="button" id="menu"
+                        class="static hidden xs:block xs:m-auto sm:block cursor-pointer ">
+                        <img class="sm:mr-2 h-[49px] w-[49px]" src="./icons/menu.svg" alt="menu">
+                    </button>
+                </div>
+            </nav-bar>
+        </header>
+    </section>
+    <hr class="flex mx-auto border-4 border-[#00F963] ">
+<!-- main -->
+
+<main class=" max-w-[1279px] mt-12 m-auto sm:flex felx-wrap xs:w-full xs:ml-10">
+    <section class=" border-2 border-solid w-full flex flex-wrap  justify-evenly gap-10 sm:flex sm:flex-wrap xs-max-w[200px] xs:flex-wrap xs:w-full xs:mx-auto ">
+       <h1 class="text-white">This is a test</h1>
+    </section>
+</main>
+<script src="main.js"></script>
+</body>
+</html>

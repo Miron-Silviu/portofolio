@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="theme-color" content="#251392">
+    <meta name="description" content="In this website are included personal projects">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silviu Miron | Web Dev </title>
+    <link rel="icon" type="image/x-icon" href="./icons/avatar.svg">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class=" bg-blue-950 dark:bg-slate-800 m-0 p-0 w-full box-border flex-col ">
+    <!-- Header Section-->
+    <section aria-label="Navigation menu" class="flex mx-auto w-full  xs:m-auto sm:mx-auto justify-between ">
+        <header
+            class="flex mx-auto mt-12 xs:w-full xs:mx-auto w-full max-w-[1279px] justify-between xs:flex-col xl:mx-11">
+            <div>
+                <img class="w-20 xs:w-10 xs:m-auto xs:justify-center sm:w-12 md:w-16" src="./icons/logo.svg" alt="logo">
+            </div>
+            <nav-bar class=" flex xs:flex-col-reverse  w-auto xs:m-auto ">
+                <menu-items id="menubar"
+                    class=" xs:justify-center  xs:m-auto hidden sm:justify-center mt-3 md:flex md:gap-5 lg:flex lg:gap-5 xl:flex xl:gap-5 2xl:flex 2xl:gap-5 ">
+                    <ul class="flex sm:flex-col xs:flex-col gap-5 xs:mx-auto">
+                        <li>
+                            <a aria-label="Home" href="index.html">
+                                <h1
+                                    class="flex text-white font-mono text-3xl  sm:block sm:text-[18px] xs:text-[16px] xs:m-auto xs:ml-4 mb-9 cursor-pointer p-2  hover:text-[#00F963] rounded-xl focus:outline-none transition ease-in-out delay-15 hover:-translate-y-1 hover:scale-110">
+                                    Home</h1>
+                            </a>
+                        </li>
+                        <li>
+                            <a aria-label="Projects" href="projects.html">
+                                <h1
+                                    class="flex text-white font-mono text-3xl sm:block sm:text-[18px] xs:text-[16px] xs:m-auto mb-9 cursor-pointer p-2  hover:text-[#00F963] rounded-lg transition ease-in-out delay-15 hover:-translate-y-1 hover:scale-110">
+                                    Projects</h1>
+                            </a>
+                        </li>
+                        <li>
+                            <a aria-label="Contact" href="contact.html">
+                                <h1
+                                    class="flex text-white font-mono text-3xl xs:w-20 sm:w-24 sm:block sm:text-[18px] xs:text-[16px] xs:m-auto mb-9 cursor-pointer bg-gradient-to-r from-blue-600 to-[#00F963] hover:from-green-500 hover:to-[#00F963] rounded-full p-2 transition ease-in-out delay-15 hover:-translate-y-1 hover:scale-110 ">
+                                    Contact</h1>
+                            </a>
+                        </li>
+                    </ul>
+                </menu-items>
+                <div>
+                    <button aria-label="menu" type="button" id="menu"
+                        class="static hidden xs:block xs:m-auto sm:block cursor-pointer ">
+                        <img class="sm:mr-2 h-[49px] w-[49px]" src="./icons/menu.svg" alt="menu">
+                    </button>
+                </div>
+            </nav-bar>
+        </header>
+    </section>
+    <hr class="border-4 border-[#00F963] xs:w-full ">
+    <!-- main -->
+    <main class="max-w-lg sm:max-w-sm  mt-10 m-auto sm:flex felx-wrap sticky xs:px-0 xs:flex-wrap ">
+        <section
+            class=" m-auto  w-full flex-col space-y-7 justify-center sm:flex sm:flex-wrap xs:flex-wrap xs:w-full   ">
+            <div class="flex justify-center w-full  overflow-hidden">
+                <h2 class="text-white text-2xl xs:text-lg xs:flex-wrap xs:w-full xs:text-center">Contact me</h2>
+            </div>
+            <form action="mailto:silviuumiron@gmail.com" method="post"
+                class=" pt-10 pb-10 flex-col xs:border-1 border-2 border-solid border-[#00F963] space-y-10 text-center sm:flex-wrap  xs:text-center xs:justify-center ">
+                <div class="relative">
+                    <input
+                        class="w-4/5 h-12 xs:flex-wrap placeholder:px-3 placeholder:text-xl placeholder:xs:text-lg placeholder:text-purple-950 rounded-2xl bg-gradient-to-r transition ease-in-out delay-15  hover:-translate-y-1 hover:scale-110  duration-300 border-solid border-2 border-[#00F963]"
+                        type="text" id="name" name="name" placeholder="Your Name" required>
+                    <label for="name"></label>
+                </div>
+                <div class="relative ">
+                    <input
+                        class="w-4/5 h-12 xs:flex-wrap  placeholder:px-3 placeholder:text-xl placeholder:xs:text-lg placeholder:text-purple-950 rounded-2xl bg-gradient-to-r transition ease-in-out delay-15  hover:-translate-y-1 hover:scale-110  duration-300 border-solid border-2 border-[#00F963]"
+                        type="email" name="email" id="email" placeholder="Your Email" required>
+                    <label for="email"></label>
+                </div>
+                <div class="relative">
+                    <textarea
+                        class="w-4/5  xs:flex-wrap  placeholder:px-3 placeholder:text-xl placeholder:xs:text-lg placeholder:text-purple-950 rounded-2xl bg-gradient-to-r transition ease-in-out delay-15  hover:-translate-y-1 hover:scale-110  duration-300 border-solid border-2 border-[#00F963]"
+                        name="story" id="story" cols="25" rows="5" placeholder="Message"></textarea>
+                </div>
+               <input  class="" type="submit" value="Send Message">
+            </form> 
+            
+
+         
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
