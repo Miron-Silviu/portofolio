@@ -1,7 +1,7 @@
 {
   "name": "portofolio",
   "version": "1.0.0",
-  "description": "",
+  "description": "This website contain personals projects.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/Silviu392/portofolio#readme",
   "devDependencies": {
-    "tailwindcss": "^3.3.3"
-  }
+    "tailwindcss": "^3.3.3",
+    "webpack-cli": "^5.1.4"
+  },
+  "keywords": []
 }

@@ -8,15 +8,18 @@
     <title>Silviu Miron | Web Dev </title>
     <link rel="icon" type="image/x-icon" href="./icons/avatar.svg">
     <link rel="stylesheet" href="style.css">
+
+  
 </head>
 
-<body class=" bg-blue-950 dark:bg-slate-800 m-0 p-0 w-full box-border flex-col ">
+<body class=" bg-blue-950 font-mono dark:bg-slate-800 m-0 p-0 w-full box-border flex-col ">
     <!-- Header Section-->
     <section aria-label="Navigation menu" class="flex mx-auto w-full  xs:m-auto sm:mx-auto justify-between ">
         <header
             class="flex mx-auto mt-12 xs:w-full xs:mx-auto w-full max-w-[1279px] justify-between xs:flex-col xl:mx-11">
             <div>
                 <img class="w-20 xs:w-10 xs:m-auto xs:justify-center sm:w-12 md:w-16" src="./icons/logo.svg" alt="logo">
+                <h1 class="flex text-white text-3xl lg:ml-2 md:ml-2 sm:text-xl sm:ml-2 xs:ml-2"> Web <> Dev</h1>
             </div>
             <nav-bar class=" flex xs:flex-col-reverse  w-auto xs:m-auto ">
                 <menu-items id="menubar"
@@ -24,23 +27,23 @@
                     <ul class="flex sm:flex-col xs:flex-col gap-5 xs:mx-auto">
                         <li>
                             <a aria-label="Home" href="index.html">
-                                <h1
-                                    class="flex text-white font-mono text-3xl  sm:block sm:text-[18px] xs:text-[16px] xs:m-auto xs:ml-4 mb-9 cursor-pointer p-2  hover:text-[#00F963] rounded-xl focus:outline-none transition ease-in-out delay-15 hover:-translate-y-1 hover:scale-110">
-                                    Home</h1>
+                                <h2
+                                    class=" md:text-xl md:mt-12 lg:mt-12 xl:mt-12 flex 2xl:mt-12   text-white font-mono text-3xl  sm:block sm:text-[18px] xs:text-[16px] xs:m-auto xs:ml-4 mb-9 cursor-pointer p-2  hover:text-[#00F963] rounded-xl focus:outline-none transition ease-in-out delay-15 hover:-translate-y-1 hover:scale-110">
+                                    Home</h2>
                             </a>
                         </li>
                         <li>
                             <a aria-label="Projects" href="projects.html">
-                                <h1
-                                    class="flex text-white font-mono text-3xl sm:block sm:text-[18px] xs:text-[16px] xs:m-auto mb-9 cursor-pointer p-2  hover:text-[#00F963] rounded-lg transition ease-in-out delay-15 hover:-translate-y-1 hover:scale-110">
-                                    Projects</h1>
+                                <h2
+                                    class="  md:text-xl md:mt-12 lg:mt-12 xl:mt-12 2xl:mt-12 flex text-white font-mono text-3xl sm:block sm:text-[18px] xs:text-[16px] xs:m-auto mb-9 cursor-pointer p-2  hover:text-[#00F963] rounded-lg transition ease-in-out delay-15 hover:-translate-y-1 hover:scale-110">
+                                    Projects</h2>
                             </a>
                         </li>
                         <li>
                             <a aria-label="Contact" href="contact.html">
-                                <h1
-                                    class="flex text-white font-mono text-3xl xs:w-20 sm:w-24 sm:block sm:text-[18px] xs:text-[16px] xs:m-auto mb-9 cursor-pointer bg-gradient-to-r from-blue-600 to-[#00F963] hover:from-green-500 hover:to-[#00F963] rounded-full p-2 transition ease-in-out delay-15 hover:-translate-y-1 hover:scale-110 ">
-                                    Contact</h1>
+                                <h2
+                                    class=" md:text-xl md:mt-12 lg:mt-12 xl:mt-12 flex 2xl:mt-12 text-white font-mono text-3xl xs:w-20 sm:w-24 sm:block sm:text-[18px] xs:text-[16px] xs:m-auto mb-9 cursor-pointer bg-gradient-to-r from-blue-600 to-[#00F963] hover:from-green-500 hover:to-[#00F963] rounded-full p-2 transition ease-in-out delay-15 hover:-translate-y-1 hover:scale-110 ">
+                                    Contact</h2>
                             </a>
                         </li>
                     </ul>
@@ -56,38 +59,59 @@
     </section>
     <hr class="border-4 border-[#00F963] xs:w-full ">
     <!-- main -->
-    <main class="max-w-lg sm:max-w-sm  mt-10 m-auto sm:flex felx-wrap sticky xs:px-0 xs:flex-wrap ">
+    <main class=" flex max-w-6xl justify-evenly sm:flex-wrap mt-12 m-auto sm:flex felx-wrap sticky xs:px-0 xs:flex-wrap ">
         <section
-            class=" m-auto  w-full flex-col space-y-7 justify-center sm:flex sm:flex-wrap xs:flex-wrap xs:w-full   ">
+            class="  w-96 flex-col space-y-7 sm:flex sm:flex-wrap xs:flex-wrap xs:w-full overflow-hidden  ">
             <div class="flex justify-center w-full  overflow-hidden">
                 <h2 class="text-white text-2xl xs:text-lg xs:flex-wrap xs:w-full xs:text-center">Contact me</h2>
             </div>
-            <form action="mailto:silviuumiron@gmail.com" method="post"
-                class=" pt-10 pb-10 flex-col xs:border-1 border-2 border-solid border-[#00F963] space-y-10 text-center sm:flex-wrap  xs:text-center xs:justify-center ">
+            <form action="" id="contact-form" method="get"
+                class=" pt-10 pb-10 flex-col xs:border-1 border-2 border-solid rounded-3xl border-[#00F963] space-y-10 text-center sm:flex-wrap  xs:text-center xs:justify-center ">
+                <div class="text-white bg-green-800 m-auto w-4/5 h-12 pt-3 rounded-2xl flex-wrap sm:h-16 sm:pt-5 xs:h-16 overflow-hidden" id="alert" >Your message has been sent</div>
                 <div class="relative">
                     <input
-                        class="w-4/5 h-12 xs:flex-wrap placeholder:px-3 placeholder:text-xl placeholder:xs:text-lg placeholder:text-purple-950 rounded-2xl bg-gradient-to-r transition ease-in-out delay-15  hover:-translate-y-1 hover:scale-110  duration-300 border-solid border-2 border-[#00F963]"
+                        class="w-4/5 h-12 bg-gray-300 xs:flex-wrap placeholder:px-3 placeholder:text-xl placeholder:xs:text-lg placeholder:text-black rounded-2xl bg-gradient-to-r transition ease-in-out delay-15  hover:-translate-y-1 hover:scale-110  duration-300 border-solid border-2 border-[#00F963]"
                         type="text" id="name" name="name" placeholder="Your Name" required>
                     <label for="name"></label>
                 </div>
                 <div class="relative ">
                     <input
-                        class="w-4/5 h-12 xs:flex-wrap  placeholder:px-3 placeholder:text-xl placeholder:xs:text-lg placeholder:text-purple-950 rounded-2xl bg-gradient-to-r transition ease-in-out delay-15  hover:-translate-y-1 hover:scale-110  duration-300 border-solid border-2 border-[#00F963]"
+                        class="w-4/5 h-12  bg-gray-300 xs:flex-wrap  placeholder:px-3 placeholder:text-xl placeholder:xs:text-lg placeholder:text-black rounded-2xl bg-gradient-to-r transition ease-in-out delay-15  hover:-translate-y-1 hover:scale-110  duration-300 border-solid border-2 border-[#00F963]"
                         type="email" name="email" id="email" placeholder="Your Email" required>
                     <label for="email"></label>
                 </div>
                 <div class="relative">
                     <textarea
-                        class="w-4/5  xs:flex-wrap  placeholder:px-3 placeholder:text-xl placeholder:xs:text-lg placeholder:text-purple-950 rounded-2xl bg-gradient-to-r transition ease-in-out delay-15  hover:-translate-y-1 hover:scale-110  duration-300 border-solid border-2 border-[#00F963]"
-                        name="story" id="story" cols="25" rows="5" placeholder="Message"></textarea>
+                        class="w-4/5 bg-gray-300 xs:flex-wrap  placeholder:px-3 placeholder:text-xl placeholder:xs:text-lg placeholder:text-black rounded-2xl bg-gradient-to-r transition ease-in-out delay-15  hover:-translate-y-1 hover:scale-110  duration-300 border-solid border-2 border-[#00F963]"
+                        name="message" id="message" cols="25" rows="5" placeholder="Message"></textarea>
                 </div>
-               <input  class="" type="submit" value="Send Message">
+               <button class="text-white xs:w-24 xs:flex-wrap text-lg mt-6 p-2.5 rounded-3xl  w-36 bg-gradient-to-r transition ease-in-out delay-15  hover:-translate-y-1 hover:scale-110  duration-300 border-solid border-2 border-[#00F963]" type="submit" >Send Message</button>
             </form> 
-            
-
-         
         </section>
+          <aside class="flex xs:mt-16 xs:justify-center sm:justify-center sm:mt-12 sm:ml-12">
+            <div class="flex-col xs:flex-wrap sm:justify-center">
+                <h3 class="text-white text-2xl  xs:text-lg text-center">Connect</h3>
+                <ul>
+                    <li>
+                        <a aria-label="github" href="https://github.com/dashboard"
+                            class="text-white xs:w-24 xs:flex-wrap text-lg  mt-6 p-2 rounded-3xl  w-36 flex bg-gradient-to-r transition ease-in-out delay-15  hover:-translate-y-1 hover:scale-110  duration-300 border-solid border-2 border-[#00F963]">Github
+
+                            <img class="flex xs:w-auto xs:flex-wrap  ml-2" src="./icons/github_icon.svg" alt="github">
+                        </a>
+                    </li>
+                    <li>
+                        <a aria-label="linkedin" href="https://www.linkedin.com/in/silviu-miron-1b185012a/"
+                            class="text-white xs:w-24 xs:flex-wrap text-lg  mt-6 p-2 rounded-3xl  w-36 flex bg-gradient-to-r transition ease-in-out delay-15  hover:-translate-y-1 hover:scale-110  duration-300 border-solid border-2 border-[#00F963]">Linkedin
+
+                            <img class=" flex xs:flex-wrap ml-2 " src="./icons/linkedin.svg" alt="linkedin">
+                        </a>
+                    </li>
+                 
+                </ul>
+            </div>
+        </aside> 
     </main>
-    <script src="main.js"></script>
+    
+    <script src="main.js" type="./module"></script>
 </body>
 </html>
