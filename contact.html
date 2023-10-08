@@ -8,8 +8,6 @@
     <title>Silviu Miron | Web Dev </title>
     <link rel="icon" type="image/x-icon" href="./icons/avatar.svg">
     <link rel="stylesheet" href="style.css">
-
-  
 </head>
 
 <body class=" bg-blue-950 font-mono dark:bg-slate-800 m-0 p-0 w-full box-border flex-col ">
@@ -19,8 +17,9 @@
             class="flex mx-auto mt-12 xs:w-full xs:mx-auto w-full max-w-[1279px] justify-between xs:flex-col xl:mx-11">
             <div>
                 <img class="w-20 xs:w-10 xs:m-auto xs:justify-center sm:w-12 md:w-16" src="./icons/logo.svg" alt="logo">
-                <h1 class="flex text-white text-3xl lg:ml-2 md:ml-2 sm:text-xl sm:ml-2 xs:ml-2"> Web <> Dev</h1>
+                <h1 class="flex text-white text-3xl lg:ml-2 md:ml-2 sm:text-xl sm:ml-2 xs:ml-2"> Web {} Dev</h1>
             </div>
+            <!-- Nvigation menu -->
             <nav-bar class=" flex xs:flex-col-reverse  w-auto xs:m-auto ">
                 <menu-items id="menubar"
                     class=" xs:justify-center  xs:m-auto hidden sm:justify-center mt-3 md:flex md:gap-5 lg:flex lg:gap-5 xl:flex xl:gap-5 2xl:flex 2xl:gap-5 ">
@@ -48,6 +47,7 @@
                         </li>
                     </ul>
                 </menu-items>
+                <!-- Button menu for small devices  -->
                 <div>
                     <button aria-label="menu" type="button" id="menu"
                         class="static hidden xs:block xs:m-auto sm:block cursor-pointer ">
@@ -59,15 +59,18 @@
     </section>
     <hr class="border-4 border-[#00F963] xs:w-full ">
     <!-- main -->
-    <main class=" flex max-w-6xl justify-evenly sm:flex-wrap mt-12 m-auto sm:flex felx-wrap sticky xs:px-0 xs:flex-wrap ">
+    <main
+        class=" flex max-w-6xl justify-evenly sm:flex-wrap mt-12 m-auto sm:flex felx-wrap sticky xs:px-0 xs:flex-wrap ">
         <section
-            class="  w-96 flex-col space-y-7 sm:flex sm:flex-wrap xs:flex-wrap xs:w-full overflow-hidden  ">
+            class="  md:gap-10 w-96 flex-col space-y-7 sm:flex sm:flex-wrap xs:flex-wrap xs:w-full overflow-hidden  ">
             <div class="flex justify-center w-full  overflow-hidden">
                 <h2 class="text-white text-2xl xs:text-lg xs:flex-wrap xs:w-full xs:text-center">Contact me</h2>
             </div>
-            <form action="" id="contact-form" method="get"
+            <!-- Contact Form -->
+            <form id="contact-form" method="post"
                 class=" pt-10 pb-10 flex-col xs:border-1 border-2 border-solid rounded-3xl border-[#00F963] space-y-10 text-center sm:flex-wrap  xs:text-center xs:justify-center ">
-                <div class="text-white bg-green-800 m-auto w-4/5 h-12 pt-3 rounded-2xl flex-wrap sm:h-16 sm:pt-5 xs:h-16 overflow-hidden" id="alert" >Your message has been sent</div>
+                <div class="hidden text-white bg-green-800 m-auto w-4/5 h-12 pt-3 rounded-2xl flex-wrap sm:h-16 sm:pt-5 xs:h-16 overflow-hidden"
+                    id="alert">Your message has been sent</div>
                 <div class="relative">
                     <input
                         class="w-4/5 h-12 bg-gray-300 xs:flex-wrap placeholder:px-3 placeholder:text-xl placeholder:xs:text-lg placeholder:text-black rounded-2xl bg-gradient-to-r transition ease-in-out delay-15  hover:-translate-y-1 hover:scale-110  duration-300 border-solid border-2 border-[#00F963]"
@@ -85,10 +88,13 @@
                         class="w-4/5 bg-gray-300 xs:flex-wrap  placeholder:px-3 placeholder:text-xl placeholder:xs:text-lg placeholder:text-black rounded-2xl bg-gradient-to-r transition ease-in-out delay-15  hover:-translate-y-1 hover:scale-110  duration-300 border-solid border-2 border-[#00F963]"
                         name="message" id="message" cols="25" rows="5" placeholder="Message"></textarea>
                 </div>
-               <button class="text-white xs:w-24 xs:flex-wrap text-lg mt-6 p-2.5 rounded-3xl  w-36 bg-gradient-to-r transition ease-in-out delay-15  hover:-translate-y-1 hover:scale-110  duration-300 border-solid border-2 border-[#00F963]" type="submit" >Send Message</button>
-            </form> 
+                <button
+                    class="text-white xs:w-24 xs:flex-wrap text-lg mt-6 p-2.5 rounded-3xl  w-36 bg-gradient-to-r transition ease-in-out delay-15  hover:-translate-y-1 hover:scale-110  duration-300 border-solid border-2 border-[#00F963]"
+                    type="submit">Send Message</button>
+            </form>
         </section>
-          <aside class="flex xs:mt-16 xs:justify-center sm:justify-center sm:mt-12 sm:ml-12">
+        <!-- Aside container -->
+        <aside class="flex xs:mt-16 xs:justify-center sm:justify-center sm:mt-12 md:ml-10 ">
             <div class="flex-col xs:flex-wrap sm:justify-center">
                 <h3 class="text-white text-2xl  xs:text-lg text-center">Connect</h3>
                 <ul>
@@ -106,12 +112,61 @@
                             <img class=" flex xs:flex-wrap ml-2 " src="./icons/linkedin.svg" alt="linkedin">
                         </a>
                     </li>
-                 
+
                 </ul>
             </div>
-        </aside> 
+        </aside>
     </main>
+    <script type="module">
+
+
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js";
+        import { getDatabase, ref, set, get, child } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-database.js";
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyCNUmA2QgJ0s7zY2WnjCmoX6u5mwfZDaM8",
+            authDomain: "contactform-75e29.firebaseapp.com",
+            projectId: "contactform-75e29",
+            storageBucket: "contactform-75e29.appspot.com",
+            messagingSenderId: "102682606923",
+            appId: "1:102682606923:web:344216ce932742274dbcce"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+
+        // set datbase
+        const db = getDatabase(app);
+       
+        const form = document.getElementById("contact-form")
+         const alert = document.getElementById("alert");
+
+        //  Create submit function
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            set(ref(db, 'user/' + document.getElementById("name").value),
+
+                {
+                    username: document.getElementById("name").value,
+                    email:document.getElementById("email").value,
+                     message: document.getElementById("message").value
+                });
+
+            form.reset()
+
+         alert.style.display="block";
+
+         setTimeout(() => {
+              alert.style.display="none";
+         }, 2000);
+
+        });
+   
+    </script>
     
-    <script src="main.js" type="./module"></script>
+    <script src="main.js"></script>
 </body>
 </html>
