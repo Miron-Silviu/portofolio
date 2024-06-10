@@ -2,7 +2,7 @@
 
 
   - [The challenge](#the-challenge)
-  -  - [Link](#link)
+  -  [Link](#link)
   - [Screenshot](#screenshot)
   - [My process](#my-process)
   - [Built with](#built-with)
