@@ -26,7 +26,7 @@ Users should be able to:
 
 # Screenshot
 
-[Phone screenshot](image.png)
+[Screenshot](image.png)
 <img width="957" alt="image" src="https://github.com/user-attachments/assets/dafa529a-6467-4719-a94f-a603f49a7c2a">
 
 
