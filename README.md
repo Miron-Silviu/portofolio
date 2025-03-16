@@ -1,8 +1,8 @@
 ## Table of contents
 
 
-  - [The challenge](#the-challenge)
   - [Link](#link)
+  - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [My process](#my-process)
   - [Built with](#built-with)
@@ -10,6 +10,9 @@
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
   - [Author](#author)
+
+## Links
+[![DEPLOYMENT](https://github.com/Miron-Silviu/Guess-my-Number/blob/main/images/Frame%201.png)](https://miron-silviu.github.io/portofolio/)
 
 ## The challenge
 
@@ -19,10 +22,6 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 - Select and submit a number rating
 - See the "Thank you" card state after submitting a rating
-
-# LINK
-
-[VIEW DEMO](https://miron-silviu.github.io/portofolio/)
 
 # Screenshot
 
